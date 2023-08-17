@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: black;
+}
+.portfolio-container{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    align-items: center;
+}
+.right-image img 
+{ 
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+
+}
+.left-info h2{
+color: #fff;
+font-family: 'Poppins', sans-serif;
+font-size: 1em;
+line-height: 30px;
+cursor: pointer;
+animation-name: rtol;
+animation-duration: 1.5s;
+}
+.left-info h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    line-height: 30px;
+    cursor: pointer;
+    animation-name: rtol;
+    animation-duration: 1.5s;
+    }
+    h1 span {
+        color: #f0f;
+    }
+    .left-info h3 {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        cursor: pointer;
+        animation-name: rtol;
+        animation-duration: 2.5s;
+    }
+    .left-info ul{
+        display: flex;
+        padding: 0px;
+    }
+.left-info ul li {
+    color:#fff ; 
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1.5em;
+    background:#242424 ;
+    width: 50px ;
+    height:50px  ;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: all ease-in-out 0.5s;
+}
+.left-info ul li:nth-child(1) {
+animation-name: btot;
+animation-duration: 1.5s;
+}
+.left-info ul li:nth-child(2) {
+animation-name: btot;
+animation-duration: 2s;
+}
+.left-info ul li:nth-child(3) {
+animation-name: btot;
+animation-duration: 2.5s;
+}
+.left-info ul li:nth-child(4) {
+animation-name: btot;
+animation-duration: 3s;
+}
+.left-info ul li:nth-child(5) {
+animation-name: btot;
+animation-duration: 3.5s;
+}
+.left-info li a {
+    color: #fff;
+}
+.left-info li:hover {
+   
+    box-shadow:
+      inset 0 0 50px #fff,      /* inner white */
+      inset 20px 0 80px #f0f,   /* inner left magenta short */
+      inset -20px 0 80px #0ff,  /* inner right cyan short */
+      inset 20px 0 300px #f0f,  /* inner left magenta broad */
+      inset -20px 0 300px #0ff, /* inner right cyan broad */
+      0 0 50px #fff,            /* outer white */
+      -10px 0 80px #f0f,        /* outer left magenta */
+      10px 0 80px #0ff;         /* outer right cyan */
+  
+}
+@keyframes rtol {
+    0% {transform: translate(100%);}
+}
+@keyframes btot {
+    0% {transform: translate(0,200%);}
+}
+
+
+
+@media (max-width: 442px) {
+    .portfolio-container {
+        display: block;
+        padding: 40px;
+    }
+
+.left-info h2 {
+    font-size: 1.5em;
+}
+
+.left-info h1 {
+    font-size: 1.5em;
+}
+
+.left-info h3 {
+    font-size: 1.5em;
+}
+
+.right-image,.left-info {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.right-image img {
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+}
+.left-info ul li {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1em;
+    margin-right: 20px;
+    background-color: #f0f;
+}
+}
+
+
+
+
+
+
+
